@@ -1,14 +1,17 @@
-# Tuples
-#Tuples are just immutable lists. Use () instead of []
+# Dictionaries
+# Like a map or hash table in other languages
 
-x = (1, 2, 3)
-print(len(x))
+cap = {}
+cap["ola"] = "nitin"
+cap["uber"] = "sudes"
+cap["volvo"] = "sujan"
 
-y = (4, 5, 6)
-print(y[2])
+print(cap)
+print(cap["ola"])
+print(cap.get("BMW"))
 
-listOfTuples = [x, y]
-print(listOfTuples)
-
-(age, money) = "25,12000".split(',')
-print("my age "+age+" and my salary "+money)
+for car in cap:
+    print(car + ":" + cap[car])
+    pass
+    
+print(cap["uber"])
