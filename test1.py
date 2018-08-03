@@ -1,17 +1,19 @@
-# Dictionaries
-# Like a map or hash table in other languages
+# Functions
 
-cap = {}
-cap["ola"] = "nitin"
-cap["uber"] = "sudes"
-cap["volvo"] = "sujan"
+def SquareIt(x):
+    return x * x
 
-print(cap)
-print(cap["ola"])
-print(cap.get("BMW"))
+print (SquareIt(3))
 
-for car in cap:
-    print(car + ":" + cap[car])
+#You can pass functions around as parameters
+
+def DoSomething(function, x):
+    return function(x) + x
     pass
-    
-print(cap["uber"])
+
+print(DoSomething(SquareIt, 4))
+
+#Lambda functions let you inline simple functions
+
+#print(DoSomething(Lambda x: x * x * x, 3))
+print(DoSomething(lambda x: x * x * x, 3))
