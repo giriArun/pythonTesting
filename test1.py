@@ -1,22 +1,15 @@
-# Looping
-
-for x in range(10):
-    print(x)
+# Activity
+# Write some code that creates a list of integers, loops through each element of the list, and only prints out even numbers!
+L = []
+E = []
+for x in range(100):
+    L.append(x)
+    if (x % 2) is 0:
+        E.append(x)
+        pass
     pass
 
-print("next")
-
-for x in range(10):
-    if (x is 1):
-        continue
-    if (x > 5):
-        break
-    print(x)
-
-print("next")
-
-x = 0
-while (x < 10):
-    print(x)
-    x += 1
-    pass
+print("My interger list:")
+print(L)
+print("My even list:")
+print(E)
