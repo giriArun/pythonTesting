@@ -1,15 +1,22 @@
-# Boolean Expresessions
+# Looping
 
-print(1 == 3)
+for x in range(10):
+    print(x)
+    pass
 
-print(True or False)
+print("next")
 
-print(1 is 3)
+for x in range(10):
+    if (x is 1):
+        continue
+    if (x > 5):
+        break
+    print(x)
 
-if 1 is 3:
-    print("Yes 1 is 3")
-elif 1 > 3:
-    print("Yes 1 > 3")
-else:
-    print("Yes it is right")
+print("next")
+
+x = 0
+while (x < 10):
+    print(x)
+    x += 1
     pass
