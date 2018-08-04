@@ -1,19 +1,15 @@
-# Functions
+# Boolean Expresessions
 
-def SquareIt(x):
-    return x * x
+print(1 == 3)
 
-print (SquareIt(3))
+print(True or False)
 
-#You can pass functions around as parameters
+print(1 is 3)
 
-def DoSomething(function, x):
-    return function(x) + x
+if 1 is 3:
+    print("Yes 1 is 3")
+elif 1 > 3:
+    print("Yes 1 > 3")
+else:
+    print("Yes it is right")
     pass
-
-print(DoSomething(SquareIt, 4))
-
-#Lambda functions let you inline simple functions
-
-#print(DoSomething(Lambda x: x * x * x, 3))
-print(DoSomething(lambda x: x * x * x, 3))
